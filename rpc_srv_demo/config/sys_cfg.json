@@ -1,0 +1,14 @@
+{
+	"db_info": {
+		"host": "localhost",
+		"port": 3306,
+		"user_name": "root",
+		"pwd": "370f92fa732e9f19a6b4cf1f0ec67511",
+		"database": "rayshape",
+		"table_type": "month"
+	},
+	"sys_info": {
+		"save_path": "",
+		"auto_delete": false	
+	}
+}
