@@ -35,5 +35,8 @@ add_subdirectory(ripcqccomponent)
 # 进入rpc_client_demo文件夹下面的CMakeLists.txt
 add_subdirectory(rpc_client_demo)
 
-# 进入rpc_demo_srv文件夹下面的CMakeLists.txt
-add_subdirectory(rpc_srv_demo)
+if (OS_WIN)
+	# 进入rpc_demo_srv文件夹下面的CMakeLists.txt
+	add_subdirectory(rpc_srv_demo)
+else()
+endif()
