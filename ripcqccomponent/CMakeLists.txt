@@ -19,8 +19,11 @@ option(ENABLE_QT6 "Enable Qt6 im module" Off)
 option(ENABLE_LIBRARY "Qt library" On)
 
 add_definitions(-DWRIPC_QC_LIB)
-add_definitions(-DHAVE_INTTYPES_H)
-add_definitions(-DHAVE_NETINET_IN_H)
+if (CMAKE_SYSTEM_NAME MATCHES "Linux")
+	add_definitions(-DHAVE_INTTYPES_H)
+	add_definitions(-DHAVE_NETINET_IN_H)
+endif()
+
 
 MESSAGE(STATUS "operation system is ${CMAKE_SYSTEM}")
 

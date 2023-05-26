@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-if (OS_WIN)
+if (CMAKE_SYSTEM_NAME MATCHES "Windows")
     set(Qt5_DIR "D:\\Qt\\5.15.2\\msvc2019_64\\lib\\cmake\\Qt5")
 else()
     set(QT_PATH /opt/Qt/5.15.2/gcc_64)
@@ -35,7 +35,7 @@ add_subdirectory(ripcqccomponent)
 # 进入rpc_client_demo文件夹下面的CMakeLists.txt
 add_subdirectory(rpc_client_demo)
 
-if (OS_WIN)
+if (CMAKE_SYSTEM_NAME MATCHES "Windows")
     # 进入rpc_demo_srv文件夹下面的CMakeLists.txt
     add_subdirectory(rpc_srv_demo)
 else()

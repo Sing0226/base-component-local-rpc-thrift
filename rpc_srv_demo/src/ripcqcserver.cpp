@@ -9,7 +9,6 @@
 #include "rslogger_declare.h"
 #include "rslog.h"
 #include "rslogging.h"
-#include "utils.h"
 #include <QTextCodec>
 #include <ctime>
 #include <random>
