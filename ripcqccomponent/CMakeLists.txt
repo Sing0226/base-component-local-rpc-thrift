@@ -68,7 +68,6 @@ endif()
 # MESSAGE("-o ${ripcqc_services_INC}")
 # MESSAGE("-input ${THRIFT_INPUT_FILE}")
 
-#.\thrift.exe -o F:/workspace/rayshape/atqc/build/rsprometheusipc/ripcqcservices -strict -r	--gen cpp:moveable_types,no_default_operators,cob_style,no_client_completion "F:/workspace/rayshape/atqc/rsprometheusipc/ripcqcservices.thrift"
 ADD_CUSTOM_COMMAND(
 	OUTPUT ${ripcqc_services_SRC}
 	COMMAND ${THRIFT_COMPILER} -o "${ripcqc_services_INC}" -strict -r 

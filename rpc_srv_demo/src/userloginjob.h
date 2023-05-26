@@ -1,14 +1,3 @@
-/////////////////////////////////////////////////////////////////////////////////
-/// Copyright (C), 2015, 
-/// Rayshape Corporation. All rights reserved.
-/// @file    ranalysedicomjob.h
-/// @author  Simone
-/// @date    2023/04/11
-/// @brief   
-///
-/// @history v0.01 2023/04/11  单元创建
-/////////////////////////////////////////////////////////////////////////////////
-
 #ifndef _R_USER_LOGIN_JOB_H__
 #define _R_USER_LOGIN_JOB_H__
 

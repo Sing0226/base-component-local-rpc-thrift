@@ -1,4 +1,4 @@
-#include "userloginjob.h"
+ï»¿#include "userloginjob.h"
 #include "rslogger_declare.h"
 #include "rslogging.h"
 #include "ripcqcserver.h"
@@ -10,7 +10,7 @@
 
 
 ///////////////////////////////////////////// RAuthorInfoJob ///////////////////////////////////////////////////
-//  ³õÊ¼»¯
+//  åˆå§‹åŒ–
 RUserLoginJob::RUserLoginJob(const std::string& reqId,
 	const std::string& userName,
 	const std::string& userPwd,
@@ -39,16 +39,16 @@ int RUserLoginJob::_run()
 	RSLOG_DEBUG << "name = " << m_userName.c_str() << ", pwd = " << m_userPwd.c_str();
 
 	std::default_random_engine e;
-	std::uniform_int_distribution<int> u(1, 1000); // ×ó±ÕÓÒ±ÕÇø¼ä
+	std::uniform_int_distribution<int> u(1, 1000); // å·¦é—­å³é—­åŒºé—´
 	e.seed(time(0));
 	if (u(e) % 2)
 	{
-		m_loginInfo = "µÇÂ¼³É¹¦";
+		m_loginInfo = "ç™»å½•æˆåŠŸ";
 		m_loginStatus = 0;
 	}		
 	else
 	{
-		m_loginInfo = "µÇÂ¼Ê§°Ü";
+		m_loginInfo = "ç™»å½•å¤±è´¥";
 		m_loginStatus = 1;
 	}
 		
@@ -62,7 +62,7 @@ void RUserLoginJob::_finalize()
 
 	RIpcQcServer::getInstance().onLoginResult(m_reqId, m_loginStatus);
 	char szMsg[10240];
-    sprintf(szMsg, "»ñÈ¡licenseĞÅÏ¢Íê³É: req id:: %s, info: %d\n",
+    sprintf(szMsg, "è·å–licenseä¿¡æ¯å®Œæˆ: req id:: %s, info: %d\n",
 		m_reqId.c_str(),
 		m_loginStatus);
 	RSLOG_DEBUG << szMsg;

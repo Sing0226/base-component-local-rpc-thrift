@@ -1,4 +1,4 @@
-#include "authorizedinfojob.h"
+ï»¿#include "authorizedinfojob.h"
 #include "rslogger_declare.h"
 #include "rslogging.h"
 #include "ripcqcserver.h"
@@ -9,7 +9,7 @@
 #include <random>
 
 ///////////////////////////////////////////// RAuthorInfoJob ///////////////////////////////////////////////////
-//  ³õÊ¼»¯
+//  åˆå§‹åŒ–
 RAuthorInfoJob::RAuthorInfoJob(const std::string& reqId,
 	int job_priority)
 	: RBaseJob(job_priority)
@@ -33,21 +33,21 @@ int RAuthorInfoJob::_run()
     int ret = 0;
 	RSLOG_DEBUG << "run start ...";
 	char szMsg[1024];
-    sprintf(szMsg, "ÕıÔÚ»ñÈ¡licenseĞÅÏ¢: req id: %s", m_reqId.c_str());
+    sprintf(szMsg, "æ­£åœ¨è·å–licenseä¿¡æ¯: req id: %s", m_reqId.c_str());
 
 	std::default_random_engine e;
-	std::uniform_int_distribution<int> u(1, 1000); // ×ó±ÕÓÒ±ÕÇø¼ä
+	std::uniform_int_distribution<int> u(1, 1000); // å·¦é—­å³é—­åŒºé—´
 	e.seed(time(0));
 	int num = u(e);
 	QString authorInfo;
 	if (u(e) % 3)
 	{
-		QString authorInfo = QString::fromLocal8Bit("license Ê£ÓàÌìÊı:  %1").arg(num);
+		QString authorInfo = QString::fromLocal8Bit("license å‰©ä½™å¤©æ•°:  %1").arg(num);
 		m_authorStatus = true;
 	}
 	else
 	{
-		QString authorInfo = QString::fromLocal8Bit("ÏµÍ³Î´ÊÚÈ¨£¬ÇëÁªÏµ³§ÉÌÌá¹©ÊÚÈ¨ĞÅÏ¢!");
+		QString authorInfo = QString::fromLocal8Bit("ç³»ç»Ÿæœªæˆæƒï¼Œè¯·è”ç³»å‚å•†æä¾›æˆæƒä¿¡æ¯!");
 		m_authorStatus = false;
 	}
     m_authorInfo = authorInfo.toLocal8Bit().data();
@@ -68,7 +68,7 @@ void RAuthorInfoJob::_finalize()
 
 	RIpcQcServer::getInstance().onRunAuthorInfoTaskFinish(m_reqId, authorInfo);
 	char szMsg[10240];
-    sprintf(szMsg, "»ñÈ¡licenseĞÅÏ¢Íê³É: req id:: %s, info: %s\n",
+    sprintf(szMsg, "è·å–licenseä¿¡æ¯å®Œæˆ: req id:: %s, info: %s\n",
 		m_reqId.c_str(),
 		authorInfo.authorInfo.c_str());
 	RSLOG_DEBUG << szMsg;

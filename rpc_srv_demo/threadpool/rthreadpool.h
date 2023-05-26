@@ -1,13 +1,3 @@
-/////////////////////////////////////////////////////////////////////////////////
-/// Copyright (C), 2022, 
-/// Richinfo Corporation. All rights reserved.
-/// @file    threadpool.h
-/// @author  Simone
-/// @date    2022/12/08
-/// @brief   
-///
-/// @history v0.01 2022/12/08  单元创建
-/////////////////////////////////////////////////////////////////////////////////
 #include "threadpool/rbasejob.h"
 #include "threadpool/rthreadpoolcallback.h"
 

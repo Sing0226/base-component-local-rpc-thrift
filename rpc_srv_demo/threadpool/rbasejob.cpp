@@ -1,14 +1,3 @@
-/////////////////////////////////////////////////////////////////////////////////
-/// Copyright (C), 2022, 
-/// Rayshape Corporation. All rights reserved.
-/// @file    BaseJob.cpp
-/// @author  Simone
-/// @date    2023/03/23
-/// @brief   
-///
-/// @history v0.01 2023/03/23  单元创建
-/////////////////////////////////////////////////////////////////////////////////
-
 #include "threadpool/rbasejob.h"
 #include "threadpool/rthreadpoolconst.h"
 #include "threadpool/rthreadpool.h"

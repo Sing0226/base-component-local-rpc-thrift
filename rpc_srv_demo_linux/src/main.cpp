@@ -1,4 +1,4 @@
-#include <QCoreApplication>
+ï»¿#include <QCoreApplication>
 #include "ripcqcserver.h"
 #include <QDebug>
 #include <QDir>
@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
     QCoreApplication a(argc, argv);
     g_RsLog.setLogLevel(ERsLogLevel::RS_LOG_DEBUG);
     RIpcQcServer::getInstance().serve();
-    // ÖĞÎÄ²âÊÔµÄÀı×Ó£¬½«À´°¡
+    // ä¸­æ–‡æµ‹è¯•çš„ä¾‹å­ï¼Œå°†æ¥å•Š
     RSLOG_DEBUG << "services start!";
 
     return a.exec();

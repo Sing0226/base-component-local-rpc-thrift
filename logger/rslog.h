@@ -1,4 +1,4 @@
-#ifndef __RSLOG_H_
+﻿#ifndef __RSLOG_H_
 #define __RSLOG_H_
 #include "rslogger_declare.h"
 #include <mutex>

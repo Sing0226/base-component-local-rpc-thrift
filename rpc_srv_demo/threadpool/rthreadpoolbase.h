@@ -1,13 +1,3 @@
-/////////////////////////////////////////////////////////////////////////////////
-/// Copyright (C), 2015, 
-/// Richinfo Corporation. All rights reserved.
-/// @file    threadpoolbase.h
-/// @author  Simone
-/// @date    2023/03/28
-/// @brief   
-///
-/// @history v0.01 2015/11/07  单元创建
-/////////////////////////////////////////////////////////////////////////////////
 #include "threadpool/rthreadpoolconst.h"
 #include <Windows.h>
 

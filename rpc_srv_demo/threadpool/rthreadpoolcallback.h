@@ -1,13 +1,3 @@
-/////////////////////////////////////////////////////////////////////////////////
-/// Copyright (C), 2015, 
-/// Richinfo Corporation. All rights reserved.
-/// @file    rhreadpoolcallback.h
-/// @author  Simone
-/// @date    2023/03/28
-/// @brief   
-///
-/// @history v0.01 2023/03/28 单元创建
-/////////////////////////////////////////////////////////////////////////////////
 #ifndef _R_THREAD_POOL_CALL_BACK_H__
 #define _R_THREAD_POOL_CALL_BACK_H__
 

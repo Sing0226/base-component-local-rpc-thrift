@@ -1,14 +1,3 @@
-/////////////////////////////////////////////////////////////////////////////////
-/// Copyright (C), 2023, 
-/// Richinfo Corporation. All rights reserved.
-/// @file    autotizedinfojob.cpp
-/// @author  Simone
-/// @date    2023/03/29
-/// @brief   
-///
-/// @history v0.01 2023/03/29  单元创建
-/////////////////////////////////////////////////////////////////////////////////
-
 #include "authorizedinfojob.h"
 #include "rslogger_declare.h"
 #include "rslog.h"

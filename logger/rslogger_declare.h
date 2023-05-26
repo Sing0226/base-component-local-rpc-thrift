@@ -1,4 +1,4 @@
-#ifndef __RS_LOGGER_DECLARE_H__
+﻿#ifndef __RS_LOGGER_DECLARE_H__
 #define __RS_LOGGER_DECLARE_H__
 
 	#if defined(__GNUC__)

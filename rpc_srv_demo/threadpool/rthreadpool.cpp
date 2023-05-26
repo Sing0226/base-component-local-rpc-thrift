@@ -1,14 +1,3 @@
-/////////////////////////////////////////////////////////////////////////////////
-/// Copyright (C), 2015, 
-/// Richinfo Corporation. All rights reserved.
-/// @file    threadpool.cpp
-/// @author  Simone
-/// @date    2023/03/28
-/// @brief   
-///
-/// @history v0.01 2022/12/09  单元创建
-/////////////////////////////////////////////////////////////////////////////////
-
 #include "threadpool/rthreadpool.h"
 #include <process.h>							//for _beginthreadex
 #include "rslogger_declare.h"

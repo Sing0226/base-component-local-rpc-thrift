@@ -1,4 +1,4 @@
-#ifndef R_SINGLETON_H
+﻿#ifndef R_SINGLETON_H
 #define R_SINGLETON_H
 #include <mutex>
 

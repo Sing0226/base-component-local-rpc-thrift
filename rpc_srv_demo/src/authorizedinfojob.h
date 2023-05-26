@@ -1,14 +1,3 @@
-/////////////////////////////////////////////////////////////////////////////////
-/// Copyright (C), 2015, 
-/// Rayshape Corporation. All rights reserved.
-/// @file    authorizedinfojob.h
-/// @author  Simone
-/// @date    2023/04/07
-/// @brief   
-///
-/// @history v0.01 2023/04/07  单元创建
-/////////////////////////////////////////////////////////////////////////////////
-
 #ifndef _R_AUTHRORIZED_INFO_JOB_H__
 #define _R_AUTHRORIZED_INFO_JOB_H__
 

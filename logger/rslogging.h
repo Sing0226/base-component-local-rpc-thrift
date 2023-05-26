@@ -1,4 +1,4 @@
-#ifndef __RSLOGGING_H_
+﻿#ifndef __RSLOGGING_H_
 #define __RSLOGGING_H_
 #include "rslogger_declare.h"
 #include "logstream.h"

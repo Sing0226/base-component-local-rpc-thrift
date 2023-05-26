@@ -1,19 +1,4 @@
-﻿/**************************************************************************
-
-Copyright:Rayshape.com
-
-Author: Simone Shi
-
-Date: 2023-01-12
-
-Version: 1.0.0
-
-Description: 单例模板封装
-
-**************************************************************************/
-
-
-#ifndef  __RS_IPC_SINGLETON_H__
+﻿#ifndef  __RS_IPC_SINGLETON_H__
 #define  __RS_IPC_SINGLETON_H__
 
 #include "stdafx.h"
