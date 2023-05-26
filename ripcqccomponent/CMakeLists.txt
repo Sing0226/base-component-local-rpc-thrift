@@ -19,6 +19,8 @@ option(ENABLE_QT6 "Enable Qt6 im module" Off)
 option(ENABLE_LIBRARY "Qt library" On)
 
 add_definitions(-DWRIPC_QC_LIB)
+add_definitions(-DHAVE_INTTYPES_H)
+add_definitions(-DHAVE_NETINET_IN_H)
 
 MESSAGE(STATUS "operation system is ${CMAKE_SYSTEM}")
 
@@ -39,7 +41,7 @@ MESSAGE(STSTUS "###################################")
 if (OS_WIN)
 	set(THRIFT_COMPILER ${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/thrift/bin/thrift.exe)
 else()
-	set(THRIFT_COMPILER "${CMAKE_SOURCE_DIR}/3rdparty/thrift/bin/thrift")
+        set(THRIFT_COMPILER "${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/thrift/bin/thrift")
 endif()
 set(THRIFT_INPUT_FILE ${CMAKE_CURRENT_SOURCE_DIR}/ripcqcservices.thrift)
 
@@ -193,10 +195,10 @@ if (OS_WIN)
 		)
 else()
 	set(lib_socket_src  
-		ipcbase/kqtlocalsocket.h
-		ipcbase/kqtlocalsocket.cpp
-		ipcbase/kxmsglocalserver_unix.cpp
-		ipcbase/kxmsglocalserver_unix.h
+                ipcbase/rqtlocalsocket.h
+                ipcbase/rqtlocalsocket.cpp
+                ipcbase/rmsglocalserver_unix.cpp
+                ipcbase/rmsglocalserver_unix.h
 		)
 endif()
 

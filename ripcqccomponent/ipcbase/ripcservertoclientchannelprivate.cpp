@@ -9,7 +9,7 @@
 #ifdef Q_OS_WIN
 #include "rlocalsocket.h"
 #else
-#include "kqtlocalsocket.h"
+#include "rqtlocalsocket.h"
 #endif
 
 #include "ripcservertoclientchannel.h"

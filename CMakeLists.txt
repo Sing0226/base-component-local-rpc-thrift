@@ -23,7 +23,7 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/build)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/build)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/build)
 
-set(CMAKE_BUILD_TYPE "Release")
+set(CMAKE_BUILD_TYPE "Debug")
 
 
 # 进入rs_logger文件夹下面的CMakeLists.txt
@@ -36,7 +36,8 @@ add_subdirectory(ripcqccomponent)
 add_subdirectory(rpc_client_demo)
 
 if (OS_WIN)
-	# 进入rpc_demo_srv文件夹下面的CMakeLists.txt
-	add_subdirectory(rpc_srv_demo)
+    # 进入rpc_demo_srv文件夹下面的CMakeLists.txt
+    add_subdirectory(rpc_srv_demo)
 else()
+    add_subdirectory(rpc_srv_demo_linux)
 endif()

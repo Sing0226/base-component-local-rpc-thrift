@@ -1,6 +1,5 @@
 ﻿#include "stdafx.h"
 #include "rlocalserver.h"
-
 #include <QtCore>
 #include <QBuffer>
 #include <QPointer>
@@ -13,8 +12,8 @@
 
 #ifdef Q_OS_WIN
 #include "rlocalsocket.h"
-#else 
-#include "kqtlocalsocket.h"
+#else
+#include "rqtlocalsocket.h"
 #endif
 
 #include "ripcservertoclientchannel.h"

@@ -10,8 +10,8 @@
 
 #ifdef Q_OS_WIN
 #include "rlocalsocket.h"
-#else 
-#include "kqtlocalsocket.h"
+#else
+#include "rqtlocalsocket.h"
 #endif
 
 #include "ripcconstant.h"
